@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_shopping"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.islam.wireframe.AddShopping">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/shopCostumerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="islam yassin" />
+
+            <EditText
+                android:id="@+id/shopCostumerPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="01119155799" />
+
+            <EditText
+                android:id="@+id/shopCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2017-02-16" />
+
+            <EditText
+                android:id="@+id/shopCostumerAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="maadi" />
+
+            <EditText
+                android:id="@+id/shopCostumerLat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="29.984066" />
+
+            <EditText
+                android:id="@+id/shopCostumerLng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="31.3192882" />
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="اسلام محمد ياسين" />
+
+            <EditText
+                android:id="@+id/scanFormat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5154616416841384813864"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="scanBar"
+                android:text="scan" />
+
+
+            <Button
+                android:id="@+id/addShop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="add" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

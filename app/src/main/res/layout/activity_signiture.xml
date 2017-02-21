@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signiture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back4"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.islam.wireframe.SignitureActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/signitureBack"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textSize="@dimen/button_text"
+            android:text="رجوع>>"
+            android:background="@drawable/buttondesign" />
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/logologologo"
+            android:orientation="vertical"/>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:text="توقيع العميل"
+                android:textSize="25sp" />
+
+            <me.panavtec.drawableview.DrawableView
+                android:id="@+id/paintView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <TextView
+                    android:id="@+id/signitureAttachFile"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical"
+                    android:hint="image"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/signitureImageDelete"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/signitureAttach"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_column="2"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttondesign"
+                        android:gravity="center"
+                        android:text="ارفاق صوره"
+                        android:textSize="@dimen/button_text" />
+
+
+                    <Button
+                        android:id="@+id/signitureDelete"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_column="2"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttondesign"
+                        android:gravity="center"
+                        android:text="مسح"
+                        android:textSize="@dimen/button_text" />
+
+                    <Button
+                        android:id="@+id/signitureSave"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_column="2"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttondesign"
+                        android:gravity="center"
+                        android:text="حفظ"
+                        android:textSize="@dimen/button_text" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

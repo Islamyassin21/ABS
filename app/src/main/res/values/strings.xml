@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">A.B.S</string>
+
+    <string-array name="status">
+        <item>تم التسليم</item>
+        <item>لم يتم التسليم</item>
+    </string-array>
+
+    <string-array name="relation">
+        <item>والد</item>
+        <item>والده</item>
+        <item>زوجه</item>
+        <item>زوج</item>
+        <item>ابن</item>
+        <item>ابنه</item>
+        <item>الاخ</item>
+        <item>الاخت</item>
+        <item>اخو الاب</item>
+        <item>اخو الام</item>
+        <item>اخت الاب</item>
+        <item>اخت الام</item>
+    </string-array>
+
+    <string-array name="reason">
+        <item>المكان مغلق</item>
+        <item>لا يوجد احد</item>
+        <item>تفاصيل العميل خطأ</item>
+        <item>حدث خطأ في البضاعه</item>
+        <item>اخرى</item>
+    </string-array>
+
+    <string-array name="kind">
+        <item>مدير</item>
+        <item>مستخدم</item>
+    </string-array>
+
+    <string-array name="tabs">
+        <item>تفاصيل الشحنه</item>
+        <item>الموقع على الخريطه</item>
+    </string-array>
+
+    <string-array name="location">
+        <item>مستشفى مصر الدولى</item>
+        <item>متحف الفن المصرى الحديث‭</item>
+        <item>شارع مكرم عبيد</item>
+        <item>مسجد الصديق</item>
+    </string-array>
+</resources>

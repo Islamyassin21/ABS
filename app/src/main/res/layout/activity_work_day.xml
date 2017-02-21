@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_work_day"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back4"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    tools:context="com.example.islam.wireframe.WorkDayActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/workBack"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:textSize="@dimen/button_text"
+            android:background="@drawable/buttondesign"
+            android:gravity="center"
+            android:text="رجوع>>" />
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/logologologo"
+            android:orientation="vertical" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <Button
+                    android:id="@+id/wordDayScan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/buttondesign"
+                    android:onClick="scanBar2"
+                    android:text="امسح"
+                    android:textSize="@dimen/button_text" />
+
+                <TextView
+                    android:id="@+id/workDayCode"
+                    style="@style/contactTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_weight="1.6"
+                    android:gravity="center"
+                    android:text="35465168564"
+                    android:textColor="@color/textView"
+                    android:textSize="18sp" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/workdayNumber"
+                style="@style/contactTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:textColor="@color/textView" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.6"
+                android:text="عدد الشحنات :"
+                android:textColor="@color/text"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ListView
+                android:id="@+id/workDayList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".9"
+                android:dividerHeight="1dp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/wordDaySelectAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="0"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/buttondesign"
+                        android:text="اختيار الكل"
+                        android:textSize="@dimen/button_text" />
+
+                    <!--<Button-->
+                    <!--android:id="@+id/wordDaydetails"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_column="1"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:layout_weight="0.25"-->
+                    <!--android:background="@drawable/button_style"-->
+                    <!--android:text="تفاصيل الشحنه" />-->
+                    <!--<Button-->
+                    <!--android:id="@+id/wordDayLocation"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_column="2"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:layout_weight="0.25"-->
+                    <!--android:background="@drawable/button_style"-->
+                    <!--android:text="مكان الشحنه" />-->
+
+
+                    <Button
+                        android:id="@+id/wordDayNext"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="2"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/buttondesign"
+                        android:text="التالي"
+                        android:textSize="@dimen/button_text" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
